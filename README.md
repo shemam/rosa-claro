@@ -1,3 +1,3 @@
 # rosa-claro
 
-Site da Empresa Rosa Claro
+Site da Empresa Rosa Claro.
