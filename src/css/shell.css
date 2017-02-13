@@ -66,18 +66,21 @@ html, body, #content {
         margin: 0 auto 0 auto;
     }
 
-    #menu-button{
-        display: block;
-        float: left;
+    #menu-button, 
+    #menu-button-close{
         font-size: 50px;
         width: 60px;
-        height: 60px;
-        top: 30px;
+        height: 60px;        
         left: 20px;
         position: relative;
         border: none;
         background: none;
+    }
 
+    #menu-button{
+        display: block;
+        float: left;
+        top: 30px;
     }
 
     #nav, #nav:before, #nav-items{
