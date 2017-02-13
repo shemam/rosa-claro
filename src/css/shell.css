@@ -27,8 +27,11 @@ html, body, #content {
 
 #header {
     height: 125px;
+    width: 100%;
     background: linear-gradient(to bottom,#f7d2f7,#fff);
     box-shadow: 0 0 50px #b47eab;
+    position: fixed;
+    top: 0;
 }
 
 #logo {
@@ -55,7 +58,7 @@ html, body, #content {
 }
 
 @media (max-width: 900px) {
-
+    
     #logo{
         float: none;
         display: block;
@@ -129,4 +132,5 @@ html, body, #content {
     #nav.nav--visible #nav-items{
         transform: none;
     }
+
 }
