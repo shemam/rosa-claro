@@ -3,6 +3,7 @@
     padding: 0;
     font-family: "ChelseaMarket";
     color: #FF69B4;
+    box-sizing: border-box;
 }
 
 *:focus {
@@ -11,28 +12,27 @@
 
 /* fallback */
 @font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v21/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v21/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
 }
 
 .material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;
-  line-height: 1;
-  letter-spacing: normal;
-  text-transform: none;
-  display: inline-block;
-  white-space: nowrap;
-  word-wrap: normal;
-  direction: ltr;
-  -webkit-font-feature-settings: 'liga';
-  -webkit-font-smoothing: antialiased;
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
 }
-
 
 html, body, #content {
     height: 100%;
@@ -51,21 +51,38 @@ html, body, #content {
 }
 
 #header {
+    top: 0;
+    position: fixed;
     height: 125px;
+}
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    height: 180px;
+}
+
+#header, #footer {
     width: 100%;
     background: linear-gradient(to bottom,#f7d2f7,#fff);
     box-shadow: 0 0 50px #b47eab;
-    position: fixed;
-    top: 0;
+    padding: 16px;
+}
+
+#newsletter {
+    width: 100%;
+}
+
+#input-newsletter {
+    width: 100%;
 }
 
 #logo {
-    height: 125px;
+    height: 100px;
     float: left;
 }
 
-#nav-header,
-#menu-button {
+#nav-header, #menu-button {
     display: none;
 }
 
@@ -85,47 +102,45 @@ html, body, #content {
 }
 
 @media (max-width: 900px) {
-    
-    #logo{
+    #logo {
         float: none;
         display: block;
         margin: 0 auto 0 auto;
     }
 
-    #menu-button, 
-    #menu-button-close{
+    #menu-button, #menu-button-close {
         font-size: 50px;
         width: 60px;
-        height: 60px;        
+        height: 60px;
         left: 20px;
         position: relative;
         border: none;
         background: none;
     }
 
-    #menu-button{
+    #menu-button {
         display: block;
         float: left;
         top: 30px;
     }
 
-    #nav, #nav:before, #nav-items{
+    #nav, #nav:before, #nav-items {
         top: 0;
         left: 0;
         height: 100%;
     }
 
-    #nav, #nav:before{
+    #nav, #nav:before {
         width: 100%;
     }
 
-
-    #nav{
+    #nav {
         position: fixed;
         pointer-events: none;
+        z-index: 100;
     }
 
-    #nav:before{
+    #nav:before {
         content: '';
         position: absolute;
         background: rgba(0,0,0,0.4);
@@ -133,7 +148,7 @@ html, body, #content {
         transition: opacity 0.2s cubic-bezier(0,0,0.3,1);
     }
 
-    #nav-items{
+    #nav-items {
         width: 70%;
         position: relative;
         background-color: #fff;
@@ -144,30 +159,29 @@ html, body, #content {
         transition: transform 0.2s cubic-bezier(0,0,0.3,1);
     }
 
-    #nav-items a{
+    #nav-items a {
         display: block;
         top: 0;
         margin-bottom: 20px;
     }
 
-    #nav.nav--visible{
+    #nav.nav--visible {
         pointer-events: auto;
     }
 
-    #nav.nav--visible:before{
+    #nav.nav--visible:before {
         opacity: 1;
     }
 
-    #nav.nav--visible #nav-items{
+    #nav.nav--visible #nav-items {
         transform: none;
     }
 
-    #nav-header{
+    #nav-header {
         background: pink;
         height: 60px;
         display: block;
         margin-left: -30px;
         margin-bottom: 30px;
     }
-
 }
