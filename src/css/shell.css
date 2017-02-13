@@ -71,11 +71,14 @@ html, body, #content {
 
     #nav{
         position: fixed;
+        pointer-events: none;
     }
 
     #nav:before{
+        content: '';
         position: absolute;
         background: rgba(0,0,0,0.4);
+        opacity: 0;
     }
 
     #nav-items{
@@ -86,6 +89,7 @@ html, body, #content {
         padding-top: 30px;
         padding-left: 30px;
         box-shadow: 2px 0 12px rgba(0,0,0,0.4);
+        transform: translateX(-102%);
     }
 
     #nav-items a{
