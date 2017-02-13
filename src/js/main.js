@@ -10,7 +10,7 @@
     });
 
     menuButtonClose.addEventListener('click', function(){
-        alert('oi');
+        nav.classList.remove('nav--visible');
     });
 
 })()
