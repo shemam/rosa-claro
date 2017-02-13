@@ -97,6 +97,7 @@ html, body, #content {
         position: absolute;
         background: rgba(0,0,0,0.4);
         opacity: 0;
+        transition: opacity 0.3s cubic-bezier(0,0,0.3,1);
     }
 
     #nav-items{
@@ -108,11 +109,24 @@ html, body, #content {
         padding-left: 30px;
         box-shadow: 2px 0 12px rgba(0,0,0,0.4);
         transform: translateX(-102%);
+        transition: transform 0.3s cubic-bezier(0,0,0.3,1);
     }
 
     #nav-items a{
         display: block;
         top: 0;
         margin-bottom: 20px;
+    }
+
+    #nav.nav--visible{
+        pointer-events: auto;
+    }
+
+    #nav.nav--visible:before{
+        opacity: 1;
+    }
+
+    #nav.nav--visible #nav-items{
+        transform: none;
     }
 }
