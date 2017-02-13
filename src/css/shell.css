@@ -78,8 +78,8 @@ html, body, #content {
     display: inline;
     position: relative;
     top: 30%;
-    margin-left: 3%;
-    font-size: 24px;
+    margin-right: 5%;
+    font-size: 30px;
     font-weight: bold;
     text-decoration: none;
 }
