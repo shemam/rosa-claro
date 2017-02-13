@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "ChelseaMarket";
+    color: #FF69B4;
+}
+
+html, body, #content{
+    height: 100%;
+    width: 100%;
+}
+
+#content{
+    background-color:#edd2e5;
+    background-image: linear-gradient(90deg, rgba(239, 195, 220, 0.5) 50%, transparent 50%),
+    linear-gradient(rgb(233, 158, 197) 50%, transparent 50%);
+    background-size:250px 250px;
+}
+
+@font-face {
+	font-family: "ChelseaMarket";
+	src: url("ChelseaMarket-Regular.ttf") format("truetype");
+}
+
+#header{
+    height: 125px;
+    background: linear-gradient(to bottom,#f7d2f7,#fff);
+    box-shadow: 0 0 50px #b47eab;
+}
+
+#logo{
+    height: 125px;
+    float: left;
+}
+
+#menu-button{
+    display: none;
+}
+
+#nav, #nav-items{
+    height: 100%;
+    text-align: center;
+}
+
+#nav a{
+    display: inline; 
+    position: relative;
+    top: 30%;
+    margin-left: 3%;
+    font-size: 24px;
+    font-weight: bold;    
+}

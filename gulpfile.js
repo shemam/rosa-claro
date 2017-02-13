@@ -49,7 +49,7 @@ gulp.task('serve',  function () {
 
 	//Starts the webserver on the "8000" port
 	//To access the app go to "http://localhost:8000"
-	gulp.src('.')
+	gulp.src('./src')
     	.pipe(webserver({
 			open: true,
 			host : host
