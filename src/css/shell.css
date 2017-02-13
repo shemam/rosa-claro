@@ -1,52 +1,96 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: "ChelseaMarket";
     color: #FF69B4;
 }
 
-html, body, #content{
+html, body, #content {
     height: 100%;
     width: 100%;
 }
 
-#content{
-    background-color:#edd2e5;
-    background-image: linear-gradient(90deg, rgba(239, 195, 220, 0.5) 50%, transparent 50%),
-    linear-gradient(rgb(233, 158, 197) 50%, transparent 50%);
-    background-size:250px 250px;
+#content {
+    background-color: #edd2e5;
+    background-image: linear-gradient(90deg, rgba(239, 195, 220, 0.5) 50%, transparent 50%), linear-gradient(rgb(233, 158, 197) 50%, transparent 50%);
+    background-size: 250px 250px;
 }
 
 @font-face {
-	font-family: "ChelseaMarket";
-	src: url("ChelseaMarket-Regular.ttf") format("truetype");
+    font-family: "ChelseaMarket";
+    src: url("ChelseaMarket-Regular.ttf") format("truetype");
 }
 
-#header{
+#header {
     height: 125px;
     background: linear-gradient(to bottom,#f7d2f7,#fff);
     box-shadow: 0 0 50px #b47eab;
 }
 
-#logo{
+#logo {
     height: 125px;
     float: left;
 }
 
-#menu-button{
+#menu-button {
     display: none;
 }
 
-#nav, #nav-items{
+#nav, #nav-items {
     height: 100%;
     text-align: center;
 }
 
-#nav a{
-    display: inline; 
+#nav a {
+    display: inline;
     position: relative;
     top: 30%;
     margin-left: 3%;
     font-size: 24px;
-    font-weight: bold;    
+    font-weight: bold;
+}
+
+@media (max-width: 900px) {
+
+    #logo{
+        float: none;
+        display: block;
+        margin: 0 auto 0 auto;
+    }
+
+    #nav, #nav:before, #nav-items{
+        top: 0;
+        left: 0;
+        height: 100%;
+    }
+
+    #nav, #nav:before{
+        width: 100%;
+    }
+
+
+    #nav{
+        position: fixed;
+    }
+
+    #nav:before{
+        position: absolute;
+        background: rgba(0,0,0,0.4);
+    }
+
+    #nav-items{
+        width: 70%;
+        position: relative;
+        background-color: #fff;
+        text-align: left;
+        padding-top: 30px;
+        padding-left: 30px;
+        box-shadow: 2px 0 12px rgba(0,0,0,0.4);
+    }
+
+    #nav-items a{
+        display: block;
+        top: 0;
+        margin-bottom: 20px;
+    }
 }
