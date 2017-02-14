@@ -27,7 +27,7 @@ var webserver = require('gulp-webserver');
  * @type {String}
  */
 //var host = '192.168.1.103';
-var host = 'localhost';
+var host = '0.0.0.0';
 
 /**
  * Default Task
