@@ -75,7 +75,7 @@ html, body, #content {
     float: left;
 }
 
-#contato {
+/* #contato {
     width: 100%;
     height: 100%;
 }
@@ -95,7 +95,7 @@ html, body, #content {
 
 .contato-item span {
     font-size: 40px;
-}
+} */
 
 #input-newsletter {
     width: 70%;
@@ -236,7 +236,7 @@ html, body, #content {
         width: 100%;
     }
 
-    #contato {
+/*     #contato {
         width: 100%;
-    }
+    } */
 }
