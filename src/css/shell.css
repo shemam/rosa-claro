@@ -71,7 +71,7 @@ html, body, #content {
 }
 
 #newsletter {
-    width: 100%;
+    width: 50%;
 }
 
 #input-newsletter {
@@ -203,5 +203,9 @@ html, body, #content {
         display: block;
         margin-left: -30px;
         margin-bottom: 30px;
+    }
+
+    #newsletter {
+        width: 100%;
     }
 }
