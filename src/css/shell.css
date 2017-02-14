@@ -77,19 +77,23 @@ html, body, #content {
 
 #contato {
     width: 100%;
+    height: 100%;
 }
 
-.contato-item{
-    margin-left: 20px;
+.contato-item {
+    position: relative;
+    left: 5%;
+    width: 95%;
+    display: block;
 }
 
-.contato-item *{
+.contato-item * {
     float: left;
-    margin: 5px;
+    margin-left: 10px;
     font-size: 30px;
 }
 
-.contato-item span{
+.contato-item span {
     font-size: 40px;
 }
 
@@ -104,16 +108,17 @@ html, body, #content {
     box-shadow: 0 0 10px #b47eab;
 }
 
-#btn-newsletter{
+#btn-newsletter {
     width: 27%;
     margin-left: 1%;
     height: 50px;
-    background:  #FF69B4;
+    background: #FF69B4;
     color: #fff;
-    font-size: 20px;
+    font-size: 15px;
     border-radius: 5px;
     border: none;
     box-shadow: 0 0 10px #b47eab;
+
 }
 
 #logo {
@@ -196,7 +201,6 @@ html, body, #content {
         transform: translateX(-102%);
         transition: transform 0.2s cubic-bezier(0,0,0.3,1);
     }
-
 
     #nav-items a {
         display: block;
