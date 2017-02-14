@@ -162,6 +162,10 @@ html, body, #content {
         background: none;
     }
 
+    #menu-button-close {
+        top: 30px;
+    }
+
     #menu-button {
         display: block;
         float: left;
@@ -221,8 +225,8 @@ html, body, #content {
     }
 
     #nav-header {
-        background: pink;
-        height: 60px;
+        background: rgba(255, 105, 180, 0.38);
+        height: 125px;
         display: block;
         margin-left: -30px;
         margin-bottom: 30px;
