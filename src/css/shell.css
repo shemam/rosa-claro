@@ -72,6 +72,25 @@ html, body, #content {
 
 #newsletter {
     width: 50%;
+    float: left;
+}
+
+#contato {
+    width: 100%;
+}
+
+.contato-item{
+    margin-left: 20px;
+}
+
+.contato-item *{
+    float: left;
+    margin: 5px;
+    font-size: 30px;
+}
+
+.contato-item span{
+    font-size: 40px;
 }
 
 #input-newsletter {
@@ -206,6 +225,10 @@ html, body, #content {
     }
 
     #newsletter {
+        width: 100%;
+    }
+
+    #contato {
         width: 100%;
     }
 }
