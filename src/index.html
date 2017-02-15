@@ -55,6 +55,19 @@
                 </div>
             </div> -->
         </div>
+        <script>
+            (function(d){
+                var imgs = d.querySelectorAll('img');
+                for(var i = 0; i < imgs.length; i++){
+                    (function(i){
+                        imgs[i].addEventListener('load', function f(){
+                           imgs[i].style.opacity=1;
+                           imgs[i].removeEventListener('load', f);
+                        });
+                    })(i)
+                }
+            })(document)
+        </script>
         <script defer src="js/main.js"></script>
     </body>
 </html>
