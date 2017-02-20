@@ -80,11 +80,14 @@ img{
 #newsletter {
     width: 50%;
     float: left;
+    background-color: rebeccapurple;
 }
 
-/* #contato {
-    width: 100%;
+#contato {
+    width: 50%;
+    float: left;
     height: 100%;
+    background-color: green;
 }
 
 .contato-item {
@@ -102,7 +105,7 @@ img{
 
 .contato-item span {
     font-size: 40px;
-} */
+}
 
 #input-newsletter {
     width: 60%;
