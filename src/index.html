@@ -12,7 +12,7 @@
         <!-- Header of the page -->
         <div id="header">
             <button id="menu-button" class="material-icons">menu</button>
-            <img id="logo" src="img/logo.svg" width="234" height="100"></img>
+            <img id="logo" src="img/logo.svg" width="234" height="100" onload="this.style.opacity=1"></img>
             <!-- Navigation menu -->
             <div id="nav">
                 <div id="nav-items">
@@ -55,19 +55,6 @@
                 </div>
             </div> -->
         </div>
-        <script>
-            (function(d){
-                var imgs = d.querySelectorAll('img');
-                for(var i = 0; i < imgs.length; i++){
-                    (function(i){
-                        imgs[i].addEventListener('load', function f(){
-                           imgs[i].style.opacity=1;
-                           imgs[i].removeEventListener('load', f);
-                        });
-                    })(i)
-                }
-            })(document)
-        </script>
         <script defer src="js/main.js"></script>
     </body>
 </html>
