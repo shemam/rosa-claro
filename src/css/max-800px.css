@@ -1,0 +1,85 @@
+@media (max-width: 800px){
+	div.menu-header{
+		display: block;
+		height: 70px;
+		width: 100%;
+		background: #FF69B4;
+	}
+
+	div.menu{
+		position: fixed;
+		top:0;
+		left: 0;
+		width: 400px;
+		max-width: 80%;
+		height: 100%;
+		background-color: #fff;
+		z-index: 1;
+		flex-direction: column;
+		align-items: flex-start;
+		justify-content: flex-start;
+		box-shadow: 0 8px 10px -5px rgba(0,0,0,.2),0 16px 24px 2px rgba(0,0,0,.14),0 6px 30px 5px rgba(0,0,0,.12);
+		transform: translateX(-102%);
+		will-change: transform;
+		transition: transform 0.2s cubic-bezier(0,0,0.3,1);
+	}
+
+	div.menu-container::before{
+		position: fixed;
+		content: "";
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0,0,0,0.5);
+		z-index: 1;
+		opacity: 0;
+		will-change: opacity;
+		transition: opacity 0.2s cubic-bezier(0,0,0.3,1);
+	}
+
+	#nav-toggle:checked ~div.menu-container::before{
+		opacity: 1;
+	}
+
+	#nav-toggle:checked ~div.menu-container{
+		pointer-events: auto;
+	}
+
+	#nav-toggle:checked ~div.menu-container div.menu{
+		transform: translateX(0);
+	}
+
+	div.menu-container{
+		position: fixed;
+		z-index: 1;
+		pointer-events: none;
+	}
+
+
+	div.menu a{ 
+		margin: 16px;
+	}
+
+	#menu-button-close{
+		background-color: rgba(255,255,255,0);
+		color: #fff;
+		border: none;
+		font-size: 35px;
+		margin: 16px;
+		outline: none;
+	}
+
+	.navigation{
+		justify-content: center;
+	}
+
+	#menu-button-open{
+		display: block;
+		position: fixed;
+		left: 0;
+		top: 0;
+		margin: 8px;
+		font-size: 50px;
+	}
+}

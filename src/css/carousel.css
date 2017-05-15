@@ -1,0 +1,89 @@
+div.carousel-container{
+	margin:	100px 0;
+	width: 80%;
+	height: 60vh;
+	position: relative;
+}
+
+div.carousel{
+	width: 100%;
+	height: 80%;	
+}
+
+div.carousel-image{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	transition: opacity 0.7s cubic-bezier(0,0,0.3,1);
+	opacity: 0;
+	background-size: cover;	
+	border-radius: 5px;
+}
+
+div.carousel-image.selected{
+	opacity: 1;
+}
+
+div.carousel-selector{
+	width: 70%;
+	height: 20%;
+	position: relative;
+	margin: 0 auto;
+	/*background: rgba(0,0,0,0.5);*/
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+}
+
+
+div.carousel-selector a{
+	height: 15px;
+	width: 15px;
+	border-radius: 50%;
+	background: currentColor;
+}
+
+div.carousel-selector a:before{
+	/*border: 7px solid #b5117f;*/
+	content: "";
+	background: #b5117f;
+	height: 25px;
+	width: 25px;
+	border-radius: 50%;
+	display: block;
+	left: -25%;
+    top: -25%;
+    position: relative;
+    transform: scale(0);
+    transition: transform 0.3s cubic-bezier(0,0,0.3,1);
+}
+
+div.carousel-selector a.selected:before{
+	transform: scale(1);
+}
+
+@media (max-width: 800px){
+	div.carousel-container{
+		width: 90%;
+	}
+}
+
+
+
+
+div.carousel-image.one{
+	background-image: url("../img/fotobanner/1.jpg");
+}
+
+div.carousel-image.two{
+	background-image: url("../img/fotobanner/2.jpg");
+}
+
+div.carousel-image.three{
+	background-image: url("../img/fotobanner/3.jpg");
+}
+
+div.carousel-image.four{
+	background-image: url("../img/fotobanner/4.jpg");
+}

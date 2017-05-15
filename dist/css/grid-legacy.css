@@ -1,0 +1,31 @@
+/* Requires that the html to not have spaces or linebreaks between columns */
+
+*{
+	box-sizing: border-box;
+}
+
+.col{
+	background-color: red;
+	padding: 5px;
+	margin: 0.5%;
+	display: inline-block;
+}
+
+@media (max-width: 600px){
+	.col{
+		width: 100%!important;
+	}
+}
+
+.col.one{width: 7.333%;}
+.col.two{width: 15.666%;}
+.col.three{width: 24%;}
+.col.four{width: 32.333%;}
+.col.five{width: 40.666%;}
+.col.six{width: 49%;}
+.col.seven{width: 57.333%;}
+.col.eight{width: 65.666%;}
+.col.nine{width: 74%;}
+.col.ten{width: 82.333%;}
+.col.eleven{width: 90.666%;}
+.col.twelve{width: 99%;}

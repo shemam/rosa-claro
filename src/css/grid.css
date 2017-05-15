@@ -1,0 +1,37 @@
+.row, .col{
+	box-sizing: border-box;	
+	display: flex;
+}
+
+.row{
+	flex-direction: row;
+}
+
+.col{
+	background-color: red;
+	padding: 5px;
+	margin: 5px;
+}
+
+@media (max-width: 600px){
+	.col{
+		width: 100%!important;
+	}
+
+	.row{
+		flex-direction: column;
+	}
+}
+
+.col.one{width: calc(100% / 12 * 1);}
+.col.two{width: calc(100% / 12 * 2);}
+.col.three{width: calc(100% / 12 * 3);}
+.col.four{width: calc(100% / 12 * 4);}
+.col.five{width: calc(100% / 12 * 5);}
+.col.six{width: calc(100% / 12 * 6);}
+.col.seven{width: calc(100% / 12 * 7);}
+.col.eight{width: calc(100% / 12 * 8);}
+.col.nine{width: calc(100% / 12 * 9);}
+.col.ten{width: calc(100% / 12 * 10);}
+.col.eleven{width: calc(100% / 12 * 11);}
+.col.twelve{width: calc(100% / 12 * 12);}

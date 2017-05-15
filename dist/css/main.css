@@ -1,0 +1,118 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "ChelseaMarket", "Arial", sans-serif;
+    color: #FF69B4;
+}
+
+@font-face {
+    font-family: "ChelseaMarket";
+    src: url("ChelseaMarket-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: 'Material Icons';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Material Icons'), local('MaterialIcons-Regular'), url(https://fonts.gstatic.com/s/materialicons/v21/2fcrYFNaTjcS6g4U3t-Y5UEw0lE80llgEseQY3FEmqw.woff2) format('woff2');
+}
+
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+	position: relative;
+	min-height: 100vh;
+	background-color: #edd2e5;
+    background-image: linear-gradient(90deg, rgba(239, 195, 220, 0.5) 50%, transparent 50%), linear-gradient(rgb(233, 158, 197) 50%, transparent 50%);
+    background-size: 140px 140px;
+    display: flex;
+    justify-content: center;
+}
+
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	color: fuchsia;
+}
+
+nav.navigation{
+	top: 0;
+	left: 0;
+	height: 70px;
+	display: flex;
+	flex-direction: row;
+	position: fixed;
+	z-index: 1;
+}
+
+img.logo{
+	height: 70px;
+	width: 165px;
+}
+
+div.menu-container{
+	width: calc(100% - 65px);
+	height: 100%;
+}
+
+div.menu{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+}
+
+div.menu-header{
+	display: none;
+}
+
+#menu-button-open{
+	display: none;
+}
+
+#nav-toggle{
+	display: none;
+}
+
+div.menu a{
+	font-size: 25px;
+}
+
+footer.footer {
+	position: absolute;
+	height: 70px;
+	bottom: 0;
+	left: 0;
+}
+
+.gradient-background{
+	background: linear-gradient(to bottom,#f7d2f7,#fff);
+}
+
+.full-width{
+	width: 100%;
+}
+
+.full-height{
+	height: 100%;
+}
