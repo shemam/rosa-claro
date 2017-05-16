@@ -27,7 +27,7 @@ var webserver = require('gulp-webserver');
  * @type {String}
  */
 //var host = '192.168.1.103';
-var host = '0.0.0.0';
+var host = 'localhost';
 
 /**
  * Default Task
@@ -37,8 +37,17 @@ var host = '0.0.0.0';
  * command line in the app root directory
  */
 gulp.task('default', [
+	'build',
 	'serve'
 ])
+
+//Task to build the project
+gulp.task('build', function () {
+	
+	//TODO - clean build
+	gulp.src('src/**/*')
+		.pipe(gulp.dest('dist'));
+});
 
 /**
  * Serve Task
@@ -49,8 +58,25 @@ gulp.task('serve',  function () {
 
 	//Starts the webserver on the "8000" port
 	//To access the app go to "http://localhost:8000"
-	gulp.src('./src')
+	gulp.src('./dist')
     	.pipe(webserver({
+			open: true,
+			host : host
+		}));
+})
+
+/**
+ * Serve Task
+ *
+ * This task start the local webserver
+ */
+gulp.task('serve-old',  function () {
+
+	//Starts the webserver on the "8000" port
+	//To access the app go to "http://localhost:8000"
+	gulp.src('./old')
+    	.pipe(webserver({
+    		port: 8888,
 			open: true,
 			host : host
 		}));
